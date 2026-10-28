@@ -1,0 +1,119 @@
+/* STYLE SAMA PERSIS GAMBAR - UNTUK HTML ASLI KAMU */
+body {
+  margin: 0;
+  padding: 8px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+#header {
+  background-color: #e8d4b5;
+  border: 1px solid #d4b896; /* <-- TAMBAH INI, punya kamu tadi hilang */
+  border-bottom: none;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+#header h1 {
+  color: #0000ff;
+  text-align: center;
+  font-size: 19px;
+  margin: 5px 0 10px 0;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+#header blockquote {
+  background-color: #ffeb00;
+  border: 1px solid #e6c800; /* <-- TAMBAH INI BIAR KAYAK DI GAMBAR */
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.4;
+  padding: 4px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-weight: normal; /* <-- UBAH, tadi kamu bold semua */
+}
+
+#soekarno {
+  font-weight: bold;
+  display: block;
+  margin-top: 2px;
+}
+
+/* MENU - div setelah header */
+#header+div {
+  background-color: #f7f7e8;
+  border-left: 1px solid #d4b896;
+  border-right: 1px solid #d4b896;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+
+#header+div ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#header+div ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+#header+div ul li a {
+  color: #4b0082;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* GAMBAR */
+.gambar {
+  background-color: #f7f7e8;
+  border: 1px solid #d4b896; /* <-- UBAH, punya kamu kepotong */
+  border-top: none;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+.gambar img {
+  width: 130px;
+  height: 125px;
+  object-fit: cover;
+  margin: 0 6px;
+  border: 1px solid #ccc; /* <-- UBAH, punya kamu kepotong "border: 1px" doang */
+  background: white;
+}
+
+/* TAMBAHAN - INI YANG BIKIN TEKS DI BAWAH GAMBAR */
+.gambar + div, #isi {
+  background-color: #f7f7e8;
+  border: 1px solid #d4b896;
+  border-top: none;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', serif;
+  font-size: 13px;
+  text-align: justify;
+}
+
+/* INI KUNCINYA - B BESAR CUMA PARAGRAF ATAS AJA */
+.gambar + div p:first-child::first-letter {
+  font-size: 40px;
+  color: #0000ff;
+  float: left;
+  line-height: 28px;
+  margin-right: 5px;
+  font-weight: bold;
+  font-family: 'Times New Roman', serif;
+}
